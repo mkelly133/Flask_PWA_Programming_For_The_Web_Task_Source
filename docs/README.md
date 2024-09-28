@@ -201,7 +201,7 @@ Copy the [GNU GPL license](https://www.gnu.org/licenses/gpl-3.0.txt) text into t
 
 5. Insert the basic HTML struture in your templates/layout.html file.
 
-```text
+```html
     <!DOCTYPE html>
     <html lang="en">
     <head>
