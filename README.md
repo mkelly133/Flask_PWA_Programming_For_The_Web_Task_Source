@@ -20,14 +20,23 @@ This guided tutorial will introduce HSC Software Engineering to the basics of de
 
 ### Setup your environment
 
-1. Install necessary depenencies.
+1. Get the working files which includes this README.md
+    - Open a new window in VSCode
+    - Choose your working directory
+    - ```bash
+        git clone https://github.com/TempeHS/Flask_PWA_Programming_For_The_Web_Task_Template.git
+
+> [!TIP]
+> Alternatively you can fork the [template repository](https://github.com/TempeHS/Flask_PWA_Programming_For_The_Web_Task_Template) to your own GitHub account and open it in a Codespace in which all dependencis and extensions will be automatically installed.
+
+2. Install necessary depenencies.
 
 ```bash
     pip install sqlite
     pip install flask
 ```
 
-2. Install specically required extensions for this tutorial.
+3. Install specically required extensions for this tutorial.
    - [ms-python.python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
    - [McCarter.start-git-bash](https://marketplace.visualstudio.com/items?itemName=McCarter.start-git-bash)
    - [alexcvzz.vscode-sqlite](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite)
@@ -602,7 +611,7 @@ def index():
     code serviceworker.js
 ```
 
-1. Configure the serviceworker.js by inserting the JS. The servicworker.js as teh same suggest is the file that does all teh work in a PWA including cacheing and API intergration for the [WEB API's](https://developer.mozilla.org/en-US/docs/Web/API).
+1. Configure the serviceworker.js by inserting the JS. The servicworker.js as the same suggest is the file that does all the work in a PWA including cacheing and API intergration for the [WEB API's](https://developer.mozilla.org/en-US/docs/Web/API).
 
 ```js
 const assets = [
@@ -671,7 +680,7 @@ const assets = [
 Validation is important to ensure the app is compliant to [W3 web standards](https://www.w3.org/standards/).
 1. Open your website in Chrome and open developer tools (F12), run a Lighthouse report.
 ![Screen cpature of Chrome Lighthouse report](/README_resources/Chrome_Lighthouse_Report.png "Click F12 and choose Lighthouse on the top menu of your developer tools").
-2. Open your website in Edge and open developer tools (F12), look at teh application report.
+2. Open your website in Edge and open developer tools (F12), look at the application report.
 ![Screen cpature of Chrome Lighthouse report](/README_resources/Edge_Application_Report.png "Click F12 and choose Lighthouse on the top menu of your developer tools").
 
 ---
