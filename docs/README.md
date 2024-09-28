@@ -2,7 +2,7 @@
 
 This guided tutorial will introduce HSC Software Engineering to the basics of developing websites with the [Python Flask framework](https://flask.palletsprojects.com/en/3.0.x/). The tutorial has been specifcally deisgned for requirements in the [NESA Software Engineering Syllabus](https://curriculum.nsw.edu.au/learning-areas/tas/software-engineering-11-12-2022/content/n12/fa6aab137e) and for students in NSW Department of Education schools using eT4L computers.
 
-![Screen capture of the finished PWA](/README_resources/final_app.png "This is what your application will look like").
+![Screen capture of the finished PWA](/docs/README_resources/final_app.png "This is what your application will look like").
 
 ## Requirements
 
@@ -679,16 +679,16 @@ const assets = [
 ### Validate your PWA
 Validation is important to ensure the app is compliant to [W3 web standards](https://www.w3.org/standards/).
 1. Open your website in Chrome and open developer tools (F12), run a Lighthouse report.
-![Screen cpature of Chrome Lighthouse report](/README_resources/Chrome_Lighthouse_Report.png "Click F12 and choose Lighthouse on the top menu of your developer tools").
+![Screen cpature of Chrome Lighthouse report](/docs/README_resources/Chrome_Lighthouse_Report.png "Click F12 and choose Lighthouse on the top menu of your developer tools").
 2. Open your website in Edge and open developer tools (F12), look at the application report.
-![Screen cpature of Chrome Lighthouse report](/README_resources/Edge_Application_Report.png "Click F12 and choose Lighthouse on the top menu of your developer tools").
+![Screen cpature of Chrome Lighthouse report](/docs/README_resources/Edge_Application_Report.png "Click F12 and choose Lighthouse on the top menu of your developer tools").
 
 ---
 
 ### Take your app further
 The following code snippets will help you create a simple form in the add.html page. This form is for people to add their details to an email database for updates on your catalogue. Less explict instructions have been provided, students are encouraged to practice their BASH, SQL Flask and HTML to bring it all together. The screen shot below is what the page should like like and when users submit the database is updated.
 
-![Screen capture of the finished PWA](/README_resources/form_example.png "This is what your application will look like").
+![Screen capture of the finished PWA](/docs/README_resources/form_example.png "This is what your application will look like").
 
 1. Page specifications:
     - Simple form where the user inserts their name and email address
