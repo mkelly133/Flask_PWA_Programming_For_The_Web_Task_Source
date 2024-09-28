@@ -49,4 +49,6 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
 remote_theme: pages-themes/cayman@v0.2.0
+title: [Flask PWA Programming For The Web Task]
