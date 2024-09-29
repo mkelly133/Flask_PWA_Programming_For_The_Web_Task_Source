@@ -1,8 +1,23 @@
 # INTRODUCTION TO FLASK AND PROGRESSIVE WEB APPS TUTORIAL
 
-This guided tutorial will introduce HSC Software Engineering to the basics of developing websites with the [Python Flask framework](https://flask.palletsprojects.com/en/3.0.x/). The tutorial has been specifcally deisgned for requirements in the [NESA Software Engineering Syllabus](https://curriculum.nsw.edu.au/learning-areas/tas/software-engineering-11-12-2022/content/n12/fa6aab137e) and for students in NSW Department of Education schools using eT4L computers.
+This guided tutorial will introduce HSC Software Engineering to the basics of developing websites with the [Python Flask framework](https://flask.palletsprojects.com/en/3.0.x/). The tutorial has been specifically designed for requirements in the [NESA Software Engineering Syllabus](https://curriculum.nsw.edu.au/learning-areas/tas/software-engineering-11-12-2022/content/n12/fa6aab137e) and for students in NSW Department of Education schools using eT4L computers.
 
-![Screen capture of the finished PWA](/docs/README_resources/final_app.png "This is what your application will look like").
+## Overview of Progressive Web Apps
+
+A [Progressive Web Apps (PWAs)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps?ref=arctype.com) is an app that is built using web platform technologies, but that provides a user experience like that of a platform-specific app. Like a website, a PWA can run on multiple platforms and devices from a single codebase. Like a platform-specific app, it can be installed on the device, can operate while offline and in the background, and can integrate with the device and with other installed apps.
+
+### Technical features of PWAs
+
+Because PWAs are websites, they have the same basic features as any other website: at least one HTML page, which loads CSS and JavaScript. Javascript is the language of the web and is exclusivly used for client side front end, python in the web context can only be used in the back end. Like a normal website, the JavaScript loaded by the page has a global Window object and can access all the Web APIs that are available through that object. The PWA standard as defined by [W3C Standards](https://www.w3.org/standards/) has some specific features additonal to a website:
+    - A web app manifest file, which, at a minimum, provides information that the browser needs to install the PWA, such as the app name and icon.
+    - A service worker, which, at a minimum, provides a basic offline experience.
+    - A set of icons and screenshots that are required when installing it as a native application.
+The below image illustrates how the servicework manages online and offline behaviour.
+![A highlevel illustration of teh service worker](/docs/README_resources/Progressive-Web-Apps-Architecture.png "The service worker handles the initial requests and sets teh behaviour depending on if the app is on or offline.")
+
+## Your end product
+This screen capture shows how the final PWA will render to the user.
+![Screen capture of the finished PWA](/docs/README_resources/final_app.png "This is what your application will look like")
 
 ## Requirements
 
@@ -11,12 +26,16 @@ This guided tutorial will introduce HSC Software Engineering to the basics of de
 
 ## Prior learning
 
-1. Bash basics
+1. Bash basics & using the GIT Bash shell in VSCode
 2. SQL
 3. HTML Basics
 4. CSS Basics
+5. Python
 
-## STEPS TO SUCCESS
+> [!NOTE]
+> From here in, you should aim to run all commands from the CLI. You are discouraged from left/right clicking the GUI. You will find it feels slow at first but through disciplined use, you will become much quicker and more accurate with CLI commands than GUI controls.
+
+## STEPS TO BUILDING YOUR FIRST PWA
 
 ### Setup your environment
 
@@ -25,11 +44,13 @@ This guided tutorial will introduce HSC Software Engineering to the basics of de
     - Choose your working directory
     - ```bash
         git clone https://github.com/TempeHS/Flask_PWA_Programming_For_The_Web_Task_Template.git
+        cd Flask_PWA_Programming_For_The_Web_Task_Template
+      ```
 
 > [!TIP]
 > Alternatively you can fork the [template repository](https://github.com/TempeHS/Flask_PWA_Programming_For_The_Web_Task_Template) to your own GitHub account and open it in a Codespace in which all dependencis and extensions will be automatically installed.
 
-2. Install necessary depenencies.
+1. Install necessary depenencies.
 
 ```bash
     pip install sqlite
@@ -128,8 +149,8 @@ Copy the [GNU GPL license](https://www.gnu.org/licenses/gpl-3.0.txt) text into t
 ```
 
 > [!NOTE]
-> The following SQL queries are provided as an example only, students are encouraged to design their own table and content, ideas include:
-
+> The following SQL queries are provided as an example only, students are encouraged to select their own content and design a database schema for it, ideas include:
+>
 > - Favourate bands
 > - Favourate movies
 > - Favourate games
@@ -184,11 +205,11 @@ Copy the [GNU GPL license](https://www.gnu.org/licenses/gpl-3.0.txt) text into t
 6. Web optimise the images using [TinyPNG](https://tinypng.com/) and save them into the static/icons.
 
 > [!NOTE]
-> Graphic design is not the focus of this course, students are encouraged not to spend excessive time designing logos and icons.
+> Graphic design is not the focus of this course, you should not spend excessive time designing logos and icons.
 
 ---
 
-### Setup your index.HTML using the Jinga2 template system
+### Setup your index.html using the Jinga2 template system
 
 > [!NOTE]
 > Adjust titles, headings and content to match your concept.
@@ -286,7 +307,7 @@ Copy the [GNU GPL license](https://www.gnu.org/licenses/gpl-3.0.txt) text into t
 
 1. Insert the menu HTML into menu.html.
 
-```css
+```html
     <nav>
         <img src="static\images\logo.png" alt="VSCode Extensions site logo." />
         <h1>VSCode Extensions</h1>
