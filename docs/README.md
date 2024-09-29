@@ -201,7 +201,7 @@ Copy the [GNU GPL license](https://www.gnu.org/licenses/gpl-3.0.txt) text into t
 
 5. Insert the basic HTML struture in your templates/layout.html file.
 
-```python
+```html
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -231,7 +231,7 @@ Copy the [GNU GPL license](https://www.gnu.org/licenses/gpl-3.0.txt) text into t
     code index.html
 ```
 
-```python
+```html
     {% extends 'layout.html' %}
     {% block content %}
         <div class="container">
@@ -414,7 +414,7 @@ def index():
 
 3. Use Janga2 to pass the data (which is a [tuple](https://www.w3schools.com/python/python_tuples.asp)) to front end content. Insert the HTML inside the `<div class="container">` of the index.html.
 
-```python
+```html
     {% for row in content %}
         <div class="card">
             <img class="card-image" src='{{ row[4] }}' alt="Product image for the {{ row[1] }} VSCode extension.">
@@ -725,7 +725,7 @@ The following code snippets will help you create a simple form in the add.html p
             return render_template('/add.html')
 ```
 
-```python
+```html
     {% if is_done %}
         <--DO THIS-->
     {% else %}
