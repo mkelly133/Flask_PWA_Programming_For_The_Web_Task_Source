@@ -26,14 +26,19 @@ This screen capture shows how the final PWA will render to the user.
 
 ## Prior learning
 
-1. Bash basics & using the GIT Bash shell in VSCode
+1. Bash basics
 2. SQL
 3. HTML Basics
 4. CSS Basics
 5. Python
 
+## Open a GIT BASH terminal
+
 > [!NOTE]
 > From here in, you should aim to run all commands from the CLI. You are discouraged from left/right clicking the GUI. You will find it feels slow at first but through disciplined use, you will become much quicker and more accurate with CLI commands than GUI controls.
+
+Make sure you open a new terminal with the keys <kbd>Ctrl</kbd> + <kbd>`</kbd> and choose Git Bash from the menu option in the top right of the terminal shell.
+![Screen capture of the menu options for terminals](/docs/README_resources/git_bash_shell.png "Choose Git Bash from the list")
 
 ## STEPS TO BUILDING YOUR FIRST PWA
 
@@ -397,7 +402,7 @@ Copy the [GNU GPL license](https://www.gnu.org/licenses/gpl-3.0.txt) text into t
 
 ---
 
-### Query your SQL database and render the content on the frontend
+### Query your SQL database and migrate the content to the frontend as HTML
 
 ```bash
     code database_manager.py
@@ -438,9 +443,9 @@ def index():
 ```html
     {% for row in content %}
         <div class="card">
-            <img class="card-image" src='{{ row[4] }}' alt="Product image for the {{`` row[1] ``}}`` VSCode extension.">
-            <h1 class="card-name">``{{`` row[1] ``}}``</h1>
-            <p class="card-about">``{{`` row[3] ``}}``</p>
+            <img class="card-image" src='{{ row[4] }}' alt="Product image for the {{ row[1] }} VSCode extension.">
+            <h1 class="card-name">{{ row[1] }}</h1>
+            <p class="card-about">{{ row[3] }}</p>
             <a class="card-link" href="{{ row[2] }}"><button class="btn">Read More</button></a>
         </div> 
     {% endfor %} 
@@ -715,7 +720,7 @@ The following code snippets will help you create a simple form in the add.html p
     - Simple form where the user inserts their name and email address
     - When they click submit the data base is updated and the form is replaced with a thank you message.
     - The form Button and labels are already styled by existing CSS you need to style the input boxes.
-3. SQL specifications:
+3. SQL schema specifications:
     - A new table called contact_list
     - 3 columns
       - id is the primary key and should increment automatically
