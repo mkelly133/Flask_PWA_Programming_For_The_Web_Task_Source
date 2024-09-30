@@ -44,7 +44,9 @@ Make sure you open a new terminal with the keys <kbd>Ctrl</kbd> + <kbd>`</kbd> a
 
 ### Setup your environment
 
-1. Get the working files which includes this README.md
+1. Common VScode settings are set in .vscode/settings.json and default plugins are in .devcontainer/devcontainer.json (devcontainer assumes you have the [Docker extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) installed.). Those with VSCode experience should adjust any settings to tehir preferences.
+
+2. Get the working files which includes this README.md
     - Open a new window in VSCode
     - Choose your working directory
     - ```bash
@@ -718,8 +720,9 @@ The following code snippets will help you create a simple form in the add.html p
 
 1. Page specifications:
     - Simple form where the user inserts their name and email address
-    - When they click submit the data base is updated and the form is replaced with a thank you message.
-    - The form Button and labels are already styled by existing CSS you need to style the input boxes.
+    - When they click submit the data base is updated
+    - The input form must be styled to be consistent with the rest of the website
+    - A message confirming submission is returned to the user
 3. SQL schema specifications:
     - A new table called contact_list
     - 3 columns
@@ -763,7 +766,7 @@ The following code snippets will help you create a simple form in the add.html p
     <form action="/app.html" method="POST" class="box">
       <div>
         <label class="form-label">Email address</label>
-        <input name="email" type="email" class="form-control" id="name" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" placeholder="name@example.com">
+        <input name="email" type="email" class="form-control" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" placeholder="name@example.com">
       </div>
       <div>
         <label class="form-label">Name</label>
