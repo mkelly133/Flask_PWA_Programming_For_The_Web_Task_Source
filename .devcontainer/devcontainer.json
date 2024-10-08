@@ -8,7 +8,7 @@
   "updateContentCommand": "pip install -r requirements.txt",
   "postCreateCommand": "",
   "postAttachCommand": {
-    "server": "pip install -r Flask"
+    "server": "pip install -r Flask",
     "server": "flask --debug run"
   },
   "portsAttributes": {
