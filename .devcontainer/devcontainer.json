@@ -1,5 +1,4 @@
 {
-  "name": "Python Flask Development Container",
   "image": "mcr.microsoft.com/devcontainers/universal:2",
   "hostRequirements": {
     "cpus": 4
@@ -8,7 +7,7 @@
   "updateContentCommand": "pip install -r requirements.txt",
   "postCreateCommand": "",
   "postAttachCommand": {
-    "server": "pip install Flask && flask --debug run"
+    "server": "flask --debug run"
   },
   "portsAttributes": {
     "5000": {
@@ -18,41 +17,13 @@
   },
   "customizations": {
     "codespaces": {
-      "openFiles": ["docs/README.md"]
+      "openFiles": [
+        "templates/index.html"
+      ]
     },
     "vscode": {
-      "settings": {
-        "files.autoSave": "onFocusChange",
-        "editor.formatOnPaste": true,
-        "editor.formatOnSave": true,
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "[python]": {
-          "editor.defaultFormatter": "ms-python.black-formatter"
-        },
-        "editor.fontSize": 18,
-        "terminal.integrated.defaultProfile.windows": "Git Bash",
-        "window.restoreWindows": "preserve",
-        "workbench.editorAssociations": {
-          "*.md": "vscode.markdown.preview.editor"
-        }
-      },
       "extensions": [
-        "McCarter.start-git-bash",
-        "alexcvzz.vscode-sqlite",
-        "medo64.render-crlf",
-        "ecmel.vscode-html-css",
-        "ms-vscode.js-debug",
-        "dbaeumer.vscode-eslint",
-        "miramac.vscode-exec-node",
-        "yy0931.vscode-sqlite3-editor",
-        "oderwat.indent-rainbow",
-        "ritwickdey.LiveServer",
-        "tomoki1207.pdf",
-        "ms-vscode-remote.remote-containers",
-        "ms-vscode-remote.remote-wsl",
-        "GitHub.codespaces",
-        "ms-vscode-remote.remote-wsl",
-        "ms-azuretools.vscode-docker"
+        "ms-python.python"
       ]
     }
   },
