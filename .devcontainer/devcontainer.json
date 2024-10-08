@@ -8,7 +8,6 @@
   "updateContentCommand": "pip install -r requirements.txt",
   "postCreateCommand": "",
   "postAttachCommand": {
-    "server": "flask --debug run"
   },
   "portsAttributes": {
     "5000": {
@@ -17,9 +16,6 @@
     }
   },
   "customizations": {
-    "codespaces": {
-      "openFiles": ["docs/README.md"]
-    },
     "vscode": {
       "settings": {
         "files.autoSave": "onFocusChange",
