@@ -56,7 +56,7 @@ This screen capture shows how the final PWA will be rendered to the user.
 
 1. Install the necessary extensions for this tutorial.
 
-| Required Extensions                                                                                    | Suggested Extensions                                                                                         |
+| Required Extensions                                                                                    | Suggested Python Extensions                                                                                  |
 | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------ |
 | [medo64.render-crlf](https://marketplace.visualstudio.com/items?itemName=medo64.render-crlf)           | [ms-python.flake8](https://marketplace.visualstudio.com/items?itemName=ms-python.flake8)                     |
 | [McCarter.start-git-bash](https://marketplace.visualstudio.com/items?itemName=McCarter.start-git-bash) | [ms-python.black-formatter](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter)\* |
