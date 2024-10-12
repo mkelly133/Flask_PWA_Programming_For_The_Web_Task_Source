@@ -64,7 +64,7 @@ This screen capture shows how the final PWA will be rendered to the user.
 |                                                                                                        | [oderwat.indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)         |
 |                                                                                                        | [esbenp.prettier-vscode](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)\*       |
 
-_\*Formatters need to be manually configured and it is recommended esbenp.prettier-vscode is the default formatter and ms-python.black-formatter is the Python language formatter_
+_\*You will need to configure your formatters, it is recommended esbenp.prettier-vscode is your default formatter and ms-python.black-formatter is the Python language formatter_
 
 > [!IMPORTANT]
 > From now on, you should aim to run all commands from the CLI. You are discouraged from left/right clicking the GUI. You will find it feels slow at first, but through disciplined use, you will become much quicker and more accurate with CLI commands than GUI controls.
