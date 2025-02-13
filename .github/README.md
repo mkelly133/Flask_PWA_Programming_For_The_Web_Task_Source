@@ -24,13 +24,13 @@ _Note backend apps where the web server serves all pages from the DNS root do no
 
 The below image illustrates how the servicework manages online and offline behaviour.
 
-![A highlevel illustration of the service worker](/docs/README_resources/Progressive-Web-Apps-Architecture.png "The service worker handles the initial requests and sets the behaviour depending on if the app is on or offline.")
+![A highlevel illustration of the service worker](/.github/Progressive-Web-Apps-Architecture.png "The service worker handles the initial requests and sets the behaviour depending on if the app is on or offline.")
 
 ## Your end product
 
 This screen capture shows how the final PWA will be rendered to the user.
 
-![Screen capture of the finished PWA](/docs/README_resources/final_app.png "This is what your application will look like")
+![Screen capture of the finished PWA](/.github/final_app.png "This is what your application will look like")
 
 ## Requirements
 
@@ -58,7 +58,7 @@ This screen capture shows how the final PWA will be rendered to the user.
 
 ### Setup your environment
 
-![Screen recording of setting up VSCode](/docs/README_resources/get_vscode_started.gif "Follow these steps to setup VSCode")
+![Screen recording of setting up VSCode](/.github/get_vscode_started.gif "Follow these steps to setup VSCode")
 
 > [!Note]
 > Helpful VSCode settings are configured in [.vscode/settings.json](/.vscode/settings.json) which will automatically apply if you are not using a custom profile. If you are using a custom profile, it is suggested you manually apply those settings to your profile, especially the \*.md file association, so the README.md default opens in preview mode and setting _bash_ as your default terminal.
@@ -80,7 +80,7 @@ _\*You will need to configure your formatters, it is recommended esbenp.prettier
 
 Make sure you open a new terminal with the keys <kbd>Ctrl</kbd> + <kbd>`</kbd> and choose Git Bash from the menu option in the top right of the terminal shell.
 
-![Screen capture of the menu options for terminals](/docs/README_resources/git_bash_shell.png "Choose Git Bash from the list")
+![Screen capture of the menu options for terminals](/.github/git_bash_shell.png "Choose Git Bash from the list")
 
 1. Get the working files, which include this README.md
    - Open a new window in VSCode
@@ -197,7 +197,7 @@ code my_queries.sql
 code data_source.db
 ```
 
-![Screen capture of query editor](/docs/README_resources/query_editor.png "Choose Query Editor from the top menu")
+![Screen capture of query editor](/.github/query_editor.png "Choose Query Editor from the top menu")
 
 ```sql
 CREATE TABLE extension(extID INTEGER NOT NULL PRIMARY KEY,name TEXT NOT NULL, hyperlink TEXT NOT NULL,about TEXT NOT NULL,image TEXT NOT NULL,language TEXT NOT NULL);
@@ -765,11 +765,11 @@ Validation is important to ensure the app is compliant with [W3 web standards](h
 
 1. Open your website in Chrome, open developer tools (F12), and run a Lighthouse report.
 
-![Screen cpature of Chrome Lighthouse report](/docs/README_resources/Chrome_Lighthouse_Report.png "Click F12 and choose Lighthouse on the top menu of your developer tools")
+![Screen cpature of Chrome Lighthouse report](/.github/Chrome_Lighthouse_Report.png "Click F12 and choose Lighthouse on the top menu of your developer tools")
 
 . 2. Open your website in Edge, open developer tools (F12), and look at the application report.
 
-![Screen cpature of Chrome Lighthouse report](/docs/README_resources/Edge_Application_Report.png "Click F12 and choose Lighthouse on the top menu of your developer tools")
+![Screen cpature of Chrome Lighthouse report](/.github/Edge_Application_Report.png "Click F12 and choose Lighthouse on the top menu of your developer tools")
 
 .
 
@@ -779,7 +779,7 @@ Validation is important to ensure the app is compliant with [W3 web standards](h
 
 The following code snippets will help you create a simple form on the add.html page. This form allows people to add their details to an email database for updates on your catalogue. Less explicit instructions have been provided; students are encouraged to practice their BASH, SQL Flask, and HTML to bring it all together. The screenshot below shows what the page should look like, and when users submit, the database is updated.
 
-![Screen capture of the finished PWA](/docs/README_resources/form_example.png "This is what your application will look like")
+![Screen capture of the finished PWA](/.github/form_example.png "This is what your application will look like")
 
 .
 
